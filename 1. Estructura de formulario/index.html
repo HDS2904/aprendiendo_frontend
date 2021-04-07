@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+</head>
+<body>
+
+
+    <h1>Formulario (tipos de input)</h1>
+
+    <!-- etiqueta para estructurar formularios y action para validarlo porun back-end "php""" -->
+    <form action="#">
+        <!-- campo donde el usuario escribe datos typo(tipo:text,entero,etc)-->
+        <input type="text">
+        <!-- boton de envio de dato -->
+        <button>Enviar</button>
+    </form>
+
+    <!-- otra manera -->
+    <form>
+        <!-- label da titulo a un campo y con for(conecta el label con el input) -->
+        <label for="nombre">Ingrese su nombre</label>
+        <input id="nombre" type="text">
+        <button>Enviar</button>
+    </form>
+
+    <br>
+    <br>
+
+    <!-- mas eficiente -->
+    <form>
+        <!-- permite agrupar campos -->
+        <fieldset>
+            <!-- legenda del fildset que actua como titulo del agrupamiento -->
+            <legend>datos personales</legend>
+            <!-- div para salto de linea formal -->
+            <div>
+                <!-- se puede omitir el label anterior y simplificarlo -->
+                <!-- name(back-end) y placeholder(imprime texto transparente dentro del input) -->
+                <input  name="username" placeholder="Ingrese nombre">
+            </div>
+            <div>
+                <!-- label contiene el password (mas comoda) -->
+                <label>
+                    ingrese su correo
+                    <!-- input tipo email / value(dato)-->
+                    <input type="email" value="ejemplo@unmsm.edu.pe">
+                </label>
+            </div>
+            <div>
+                <label>
+                    fecha de nacimiento
+                    <input type="date">
+                </label>
+            </div>
+            <div>
+                <label>
+                    edad
+                    <!-- input: value(ingresa datos)/ reonly(inmodificable) -->
+                    <input type="number" value="0" readonly>
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Datos adicionales</legend>
+            <div>
+                pasa tiempos:
+                <label><input type="checkbox">musica</label>
+                <label><input type="checkbox">cine</label>
+                <label><input type="checkbox">anime</label>
+            </div>
+            <div>
+                genero: 
+                <label><input type="radio" name="gener">Hombre</label>
+                <label><input type="radio" name="gener">Mujer</label>
+            </div>
+            <div>
+                escoje tu pais
+                <!-- contiene una lista: name(categoria)/id(para js)/multiple(cuadro para navegar) -->
+                <select name="country" id="country" multiple >
+                    <!-- Permit agrupar o categorizar elementos de la lista -->
+                    <optgroup label="America">
+                        <!-- elemento u opcion de una lista -->
+                        <option value="pe">Perú</option>
+                        <option value="ch">Chile</option>
+                        <option value="br">Brasil</option>
+                    </optgroup>
+                    <optgroup label="Asia">
+                        <option value="ja">Japon</option>
+                        <option value="ru">Rusia</option>
+                    </optgroup>
+                    <!-- campo o area para ingresr o mostrar mensajes -->
+                    <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+                </select>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>datos de cuenta</legend>
+            <div>
+                <label>
+                    Ingrese su nombre
+                    <!-- atributo: id(manejo en javascrip)/ name (imput para mandar al back-end"php")/ requerid(indispensable sino no va) -->
+                    <input id="username" name="username" required>
+                </label>
+            </div>
+            <div>
+                <label>
+                    Ingrese su contraseña
+                    <!-- atributo name del imput para mandar al back-end(php) -->
+                    <input type="password" name="password" required>
+                </label>
+            </div>
+        </fieldset>
+        <!-- reemplazo del boton enviar: type(subir ddato) value(imprimir en el boton) -->
+        <input type="submit" value="Iniciar Sesion">
+    </form>
+
+
+    <!-- pequeño codigo javascrip para manejo de la etiqueta input(con id username) -->
+    <script>
+        // ejecutar un evento en la etiqueta "username"
+        // enviando datos cada que el usuario suelte el teclado
+        document.getElementById('username').addEventListener('keyup', e =>{
+            console.log(e.target.value)
+        })
+    </script>
+    
+
+</body>
+</html>
