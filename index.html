@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Especificidad-Cascada-Herencia</title>
+    <!-- Normalize: normaliza todos los stylos qu el navegador tiene -->
+    <link rel="stylesheet" href="./Normalize.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body >
+    
+    <h1>Especificidad-Cascada-Herencia</h1>
+
+    
+    <!-- Especificidad-Cascada-Herencia -->
+
+    <!-- Especificidad -->
+    <div>
+        <div class="norma">
+            <a href="https://www.w3.org/TR/selectors/#specificity.">Especificidad normas</a>
+        </div>
+        <a href="http://specificity.keegan.st/">Calculadora de especificidad</a>
+    </div>
+    
+    <!-- Cascada -->
+    <p>anterior</p>
+    <p>medio</p>
+    <p>posterior</p>
+
+    <!-- herencia -->
+    <h2>La mejor pagina <span>internet</span></h2>
+
+    <!-- Comandos -->
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4
+            <ol>
+                <li>sub item 1
+                    <span class="nie"> numero par</span>
+                </li>
+                <li>sub item 2
+                    <a href="#">enlace</a>
+                </li>
+            </ol>
+        </li>
+    </ul>
+
+
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+
+
+/* ESPECIFICIDAD: Se aplica el estilo con mayor especificación en que etiqueta o etiqueta con atributo aplicar */
+
+/* mayor especificidad: 1 + 10 + 1 = 12 */
+div .norma a {
+    color: red;
+}
+
+/* menor especificidad: 1 + 1 = 2 */
+div a {
+    color: green;
+}
+
+
+/* CASCADA: en etiquetas o atributos de igual  denominacion, se aplica al de la ultima linea */
+
+/* primera aplicación */
+p  {
+    background: yellow;
+}
+
+/* segunda aplicacion */
+p {
+    background: orange;
+}
+
+/* tercera y ultima apliccion que se le aplica el estilo */
+p {
+    background: greenyellow;
+}
+
+
+/* HERENCIA: Aplicar o heredar los atributos del padre al desendiente o hijo */
+
+/* en la aplicacion a este estilo a h2 se aplica tambien a span que es el padre de este y hereda sus atributos */
+h2 {
+    font-size: -0.2em;
+}
+
+
+/* OTROS COMANDOS */
+
+ul {
+    color: aqua;
+}
+
+ul li ol li .nie {
+    color: blue;
+}
+
+/* !important: le aplica +1000 de especificidad (le oblica aplicar el estilo en caso e no poder hacerlo) */
+.nie {
+    color: orange !important;
+}
+
+/* inicial */
+ol {
+    color: initial;
+}
+
+/* inherit */
+ol li a {
+    color: inherit;
+}
