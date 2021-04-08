@@ -1,0 +1,12 @@
+/* selctores descendientes "espacio" (el que esta a la derecha es el descendiente)*/
+.list .item {
+    color: aqua;
+}
+
+ul span {
+    color: orange;
+}
+
+.title {
+    background: yellow;
+}

@@ -1,0 +1,19 @@
+
+
+/* agregar icono en la parte derecha de etiquetas <a> */
+a {
+    background: url(https://icon-icons.com/icons2/1377/PNG/32/applicationvnd_92739.png) no-repeat center right / 2rem;
+    padding-right: 2.2rem;
+}
+
+/* /* selector para agregar estilo si el atributo href "^" inicia en "contenido" */
+[href^="./"],
+[href^="https://ed.team"] {
+    color: red;
+    background: none;
+}
+
+
+
+
+

@@ -1,0 +1,21 @@
+/* Selector universal (aplica su estilo  a todas las etiquetas) */
+* {
+    color: blue;
+}
+
+/* selector universal para ul (todo lo que contiene ul) ya que * es hijo de ul*/
+ul * {
+    color: red;
+    display: none;
+}
+
+/* selector de una clase de un li de ul que se aplica a pesar del * */
+.last {
+    color: chartreuse;
+    display: block;
+}
+
+span {
+    color: slateblue;
+    display: block;
+}

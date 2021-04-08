@@ -1,0 +1,8 @@
+/* No usar el selector con hash(#) llamado de un id de una etiqueta */
+#titlejs {
+    background: yellow;
+}
+
+#descriptionjs {
+    background: orange;
+}

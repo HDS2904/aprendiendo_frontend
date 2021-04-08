@@ -1,0 +1,13 @@
+/* SELECTORES COMPUESTOS */
+
+/* Selectores agrupados (tanto para etiquetas o sus clases de atributos)*/
+h1,
+h2,
+div {
+    background: red;
+}
+
+.title,
+.parrafo {
+    background: wheat;
+}

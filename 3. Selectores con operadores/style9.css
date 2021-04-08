@@ -1,0 +1,12 @@
+
+/* display: none (ocultar) / block (mostrar) */
+
+/* padre > hijo directo */
+li > ul  {
+    display: none;
+}
+
+/* pseudo-clase  (etiqueta1):hover (etiqueta2) (si el mouse pasa sobre la etiqueta => se desplega ell contenido de la etiqueta2*/
+li:hover ul {
+    display: block;
+}

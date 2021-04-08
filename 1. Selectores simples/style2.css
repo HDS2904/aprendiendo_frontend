@@ -1,0 +1,23 @@
+/* selectores de clase (escoje una clase de una o varias etiquetas) */
+.title {
+    background: red;
+    color: blue;
+}
+
+.description {
+    background: green;
+    color: orange; 
+}
+
+/* creacion de clases para situaciones que sucedan en el proceso es mas eficiente si
+ se crean clases que se usa recurrentemente para solo agregarlo en el htm atributo clase de las etiquetas*/
+.bold {
+    font-weight: bold;
+}
+
+.center {
+    text-align: center;
+}
+
+
+/* OJO: las clases no pueden iniciar en numeros/ aceotan caracteres unicod (emoji standar) */

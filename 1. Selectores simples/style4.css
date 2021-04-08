@@ -1,0 +1,14 @@
+/* selectores case sensitive (diferencia mayuscula y miniscula) y insensitive(no diferencia mayusculas y minusculas) */
+
+/* CSS es case insensiti con los tag de ticket de HTML */
+H2 {
+    color: red;
+}
+
+DIV {
+    color: violet;
+}
+/* css es case sensitive con los atributos de las etiquetas (como class)*/
+.Parrafo {
+    color: orange;
+}

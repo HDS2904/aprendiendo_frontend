@@ -1,0 +1,16 @@
+
+a {
+    color: blue;
+}
+
+/* selector para agregar estilo si el atributo href "$" termina en " " */
+[href$=".pdf"] {
+    color: red;
+    background: url(https://icon-icons.com/icons2/77/PNG/32/adobe_pdf_document_14979.png) no-repeat center right / 2rem;
+    padding-right: 2.2rem;
+}
+
+
+
+
+

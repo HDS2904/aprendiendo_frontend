@@ -1,0 +1,22 @@
+
+
+/* hermanos siguientes: class1 ~ class2 (todas las etiquetas con atributo class2
+son los hermanos siguientes de class1) [OJO aqui no importa si hay etiquetas entre ellas] */
+.hermano-mayor ~ .hermano {
+    background: yellow;
+}
+
+/* Se aplica cuando se quiere aplicar un style al hermano siguiente pero que entre ellos 
+puede haber otras etiquetas */
+.enabled {
+    display: none;
+}
+
+.check:checked + .enabled {
+    display: block;
+}
+
+/* entre check y disable hay otr etiqueta enable por ello se usa ~ */
+.check:checked ~ .disabled {
+    display: none;
+}

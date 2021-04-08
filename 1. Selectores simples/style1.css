@@ -1,0 +1,13 @@
+/* SELECTORES SIMPLES */
+
+/* selector (escoje una etiqueta de html para darle estilos) 
+ {bloque (estilos para el selector con propiedad:valore)} */ 
+h2 {
+    background: yellow;
+    color: red;
+}
+
+p {
+    background: orchid;
+    color: turquoise;
+}

@@ -1,0 +1,32 @@
+
+body {
+    --color-title1: blue;
+    --color-title2:green;
+}
+
+.title-1 {
+    color: var(--color-title1);
+}
+
+.title-2 {
+    color: var(--color-title2);
+}
+
+/* ya que hay dos <p> con el muismo atributo class, aplica a ambos */
+.subtitle {
+    font-size: .5em;
+    margin-top: -2em;
+}
+
+/* hermno siguiente: class1 + class2 (class2 es el hermano siguiente o adyacente de class1)
+[ojo no tiene que estar ninguna otra etiqueta entre los dos] */
+.title-1 + .subtitle {
+    color: var(--color-title1);
+}
+
+.title-2 + .subtitle {
+    color: var(--color-title2);
+}
+
+/* aplicable para que el estyle que demos a etiquetas con misma class se 
+aplique solo a una y no a todas, referenciandonos de un tiquet adyacente*/

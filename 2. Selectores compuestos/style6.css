@@ -1,0 +1,9 @@
+h2, .item, p {
+    color: red;
+}
+
+/* selctores combinados (seleccionar una etiqueta de manera mas especifica usando clase, id)*/
+/* Selectorec combinados no deben tener espacios */
+h2.tittle {
+    color: green;
+}

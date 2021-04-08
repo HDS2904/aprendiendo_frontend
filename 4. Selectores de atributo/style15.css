@@ -1,0 +1,33 @@
+
+    /* estilos para  ambas etiquetas a pesar que son de clases distintas */
+  /* agrega un estilos aquel atributo class que contiene * un " " c */
+  [class*="button-"] {
+    display: inline-block;
+    margin: 1em;
+    padding: 1em 2em;
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* estilos para cada clase en particulas */
+  .button-cta {
+    background: orange;
+  }
+  
+  .button-alert {
+    background: red;
+  }
+
+
+  /* otros selectores  */
+
+  /* ~ da un estilo aquel atributo que tiene como dato x de "d x f" */
+  [class~="sdb"] {
+    color: red;
+  }
+
+  /*  | da un estilo aquel atributo que comienza con x de "x-y-z */
+  [class|="mda"] {
+    color: yellow;
+  }
+

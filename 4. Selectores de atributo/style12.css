@@ -1,0 +1,18 @@
+
+
+/* atributo type del input tomando el tipo de atributo con el detalle */
+[type="email"] {
+    border: 1px solid blue;
+}
+
+[type="submit"] {
+    background: red;
+    color: white;
+    border: none;
+}
+
+/* atributo requerid del input tomando solo el atributo sin el detalle */
+[required] {
+    border: 2px solid red;
+    margin: .5em;   
+}
