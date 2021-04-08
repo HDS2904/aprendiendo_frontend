@@ -1,0 +1,55 @@
+
+.box {
+    background: yellow;
+    
+    width: 300px;
+    padding: 50px;
+    float: left;
+}
+
+/* Marge: no forma parte del tamaño de la caja al ser externo */
+.tipo1 {
+    /* poner margenes especificos por lados */
+    margin-top: 50px;
+    margin-right: 100px;
+    margin-bottom: 200px;
+    margin-left: 30px;
+
+    /* poner margenes en una sola linea en sentido horario */
+    margin: 50px 100px 200px 30px;
+
+    /* poner margenes con autocompletado */
+    margin: 50px 100px;
+    margin: 100px;
+
+}
+
+.tipo2 {
+    box-sizing: border-box;
+    padding: 50px;
+    width: 50%;
+
+    /* poner margenes especificos por lados en % (este % se calcula del padre) */
+    margin-top: 10%;
+    margin-right: 20%;
+    margin-bottom: 30%;
+    margin-left: 25%; /*permite alterar la posicion*/
+}
+
+.container {
+    clear: both;
+    background: pink;
+    width: 300px;
+    /* mponer border a los costados para centrar */
+    margin-left: auto;
+    margin-right: auto;
+
+    
+}
+
+.item {
+    /* reducir tamaño del contenedor */
+    margin-left: -20px;
+    margin-right: -20px;
+    border: 1px solid red;
+}

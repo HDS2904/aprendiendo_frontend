@@ -1,0 +1,9 @@
+
+.box {
+    width: 400px;
+    height: 300px;
+    background: red;
+    margin: 100px auto;
+    /* borde: forma parte de la caja */
+    border: 20px solid black;
+}

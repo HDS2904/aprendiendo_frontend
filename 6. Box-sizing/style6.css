@@ -1,0 +1,16 @@
+
+.box {
+    background: yellow;
+    background-clip: content-box;
+
+    /*box model, permite editar los margenes de cada capa*/
+    width: 200px;
+    height: 100px;
+    padding: 50px;
+    border: 30px solid black;
+    margin: 50px;
+
+    /* box sizing, permite tomar como referencia el width y height como el total */
+    box-sizing: border-box;
+
+}

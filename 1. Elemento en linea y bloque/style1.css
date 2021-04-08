@@ -1,0 +1,26 @@
+
+/* Elementos de bloque(block), inline(linial), inline-block(linial y bloque) y none(ocultar)*/
+
+/* elemento en bloque */
+.bloque-1 {
+    background-color: green;
+}
+
+.bloque-2 {
+    background-color: lightskyblue;
+    width: 400px;
+    height: 100px;
+}
+
+/* enelemnto en linea */
+.linea-1 {
+    background-color: darkgray;
+}
+
+.linea-2 {
+    background-color: mediumpurple;
+}
+
+img {
+    width: 80px;
+}

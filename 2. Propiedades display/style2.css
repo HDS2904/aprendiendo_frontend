@@ -1,0 +1,38 @@
+
+/* Elementos de bloque(block), inline(linial), inline-block(linial y bloque) y none(ocultar)*/
+
+/*etiqueta bloque convetida a linial se desactiva funciones de alto y ancho*/
+h3 {
+    background: yellow;
+    width: 200px;
+    height: 500px;
+    display: inline;
+}
+
+p {
+    background: red;
+    display: inline;
+}
+
+/*elemento linial convertido en bloque que se puede poner alto y ancho*/
+span {
+    background: green;
+    width: 200px;
+    height: 100px;
+    display: block;
+}
+
+/*etiqueta linial convetida bloque/linial que tiene ancho y alto pero se acomoda en linea*/
+strong {
+    background: orange;
+    width: 200px;
+    height: 100px;
+    display: inline-block;
+}
+
+/*eiqueta bloque que se oculta al poner none*/
+aside {
+    background: magenta;
+    display: none;
+}
+

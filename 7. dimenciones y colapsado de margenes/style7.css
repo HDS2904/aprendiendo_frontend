@@ -1,0 +1,27 @@
+
+body {
+    margin: 0;
+}
+
+/* margenes de un titulo puede notarse fuera de la caja */
+.article {
+    background: yellow;
+    margin: 0;
+    padding-top: 1px;
+}
+
+/* elimina margenes por defecto que le da el navegador */
+p {
+    margin-bottom: 0;
+}
+
+.title {
+    margin-top: 0;
+}
+
+/* evitar sobreposicion (colapso) de margenes tirando margenes para abajo*/
+
+.div1, .div2 {
+    background: green;
+    margin-bottom: 50px;
+}

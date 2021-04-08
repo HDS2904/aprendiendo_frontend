@@ -1,0 +1,22 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+/* (padre) */
+body {
+    margin: 0;
+    /* viewport width y viewport height que referencia el tamaño de ventana (alto declarado) */
+    height: 100vh;
+    width: 100vw;
+    /* view height ocupa el 100% de la pantalla (alto automatico) */
+    min-height: 100vh;
+}
+
+/* (hijo) es decir:los tamaños con % de las dimensiones son tomadas como base del body */
+.container {
+    width: 90%;
+    height: 100%;
+    background: yellow;
+}

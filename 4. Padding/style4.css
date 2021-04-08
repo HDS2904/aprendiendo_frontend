@@ -1,0 +1,37 @@
+
+body {
+    margin: 0;
+}
+
+.div1 {
+
+    background: yellow;
+    /* poner padding especificos por lados */
+    padding-top: 50px;
+    padding-right: 100px;
+    padding-bottom: 200px;
+    padding-left: 30px;
+
+    /* poner padding en una sola linea en sentido horario */
+    padding: 50px 100px 200px 30px;
+
+    /* poner padding con autocompletado */
+    padding: 50px 100px;
+    padding: 100px;
+
+}
+
+.div2 {
+    box-sizing: border-box;
+    background: green;
+    width: 400px;
+    height: 200px;
+
+    /* poner padding especificos por lados:top/bottom => ancho(width) y right/left => altura(height) (este % se calcula del mismo elemento) */
+    padding-top: 10%;
+    padding-right: 20%;
+    padding-bottom: 30%;
+    padding-left: 25%;
+
+    padding-bottom: 56.25% /*para videos responsi 16:9 */
+}
