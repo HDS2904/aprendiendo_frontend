@@ -1,0 +1,50 @@
+
+:root {
+    box-sizing: border-box;
+}
+
+::before, ::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+
+main article {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: grey;
+    color: midnightblue;
+    margin: 30px auto;
+}
+
+/* xx-child: permite dar diseño tomando como referencia las posiciones (referente a los hijos del padre) */
+
+/* nth-child(x): permite manipular la/las posiciones especificas x de los hijos de main para darle acciones o efectos
+x= numero, multiplos, odd (pares), even (inpar)*/
+main article:nth-child(3n) {
+    background-color: brown;
+}
+
+main article:nth-child(3n):hover {
+    background-color: olive;
+}
+
+main article:nth-child(3n):active {
+    background-color: lightcoral;
+}
+
+/* first-child: permite dar diseño al primer elemento de los hijos */
+main article:first-child {
+    background-color: fuchsia;
+}
+
+/* last-child: permite dar diseño al ultimo elemento de los hijos */
+main article:last-child {
+    background-color: cornflowerblue;
+}
+
+
+
+
+

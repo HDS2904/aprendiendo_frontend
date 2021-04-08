@@ -1,0 +1,49 @@
+
+:root {
+    box-sizing: border-box;
+}
+
+::before, ::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+main article {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: grey;
+    color: midnightblue;
+    margin: 30px auto;
+}
+
+/* xx-of-type: permite dar diseño tomando como referencia la naturaleza de la etiqueta (referentes a hermanos del mismo tipo) */
+
+/* nth-of-type(x): permite manipular la/las posiciones especificas x de los hijos de main para darle acciones o efectos
+x= numero, multiplos, odd (pares), even (inpar)*/
+main article:nth-of-type(even) {
+    background-color: brown;
+}
+
+main article:nth-of-type(even):hover {
+    background-color: olive;
+}
+
+main article:nth-of-type(even):active {
+    background-color: lightcoral;
+}
+
+/* first-child: permite dar diseño al primer elemento de los hijos */
+main article:first-of-type {
+    background-color: fuchsia;
+}
+
+/* last-child: permite dar diseño al ultimo elemento de los hijos */
+main article:last-of-type {
+    background-color: saddlebrown;
+}
+
+
+
+
+

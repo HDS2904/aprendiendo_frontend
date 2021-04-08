@@ -1,0 +1,44 @@
+
+:root {
+    box-sizing: border-box;
+}
+
+.enl {
+    padding: 30px;
+    font-size: 25px;
+}
+
+main article {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: grey;
+    color: midnightblue;
+}
+
+
+/* :hover: le da na accion al pasar el mouse sobre ella (aplicacble a cualquier selector) */
+main article:hover {
+    background-color: midnightblue;
+    color: grey;
+
+    transition: all .5s ease-out;
+}
+
+/* :action: le da una accion al presionar click del mouse sobre ella (debe estar despues de un :hover) */
+main article:active {
+    background-color: yellow;
+    color: black;
+}
+
+/* :link: es el diseño azul para los enlaces */
+.p-1:link {
+    color: chartreuse;
+}
+
+/* :visited: es el diseño morado de los enlaces visitados */
+.p-1:visited {
+    color: red;
+}
+
+
+/* CASCADA: links / visited / hover / actived */

@@ -1,0 +1,10 @@
+
+/* La pseudoclase root: tiene mayor specificidad que la misma etiqueta html a pesar de ser lo mismo */
+:root {
+    background-color: cadetblue;
+}
+
+html {
+    background-color: orange;
+}
+

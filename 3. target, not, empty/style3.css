@@ -1,0 +1,79 @@
+
+:root {
+    box-sizing: border-box;
+}
+
+::before, ::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+
+.modal1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255,60,50,.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalbox {
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: chocolate;
+}
+
+/* :Target: permite agregar estilos a la etiqueta cuyo id coincide con el href de la etiqyeta <a> al ser clickeada */
+.modal1:target {
+    display: flex;
+}
+
+
+
+.form-1 {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: grey;
+    color: midnightblue;
+    margin: 30px;
+    display: none;
+    flex-direction: column;
+    display: flex;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/*  :not(x) esto crea una excepcion de no aplicar los stylos a la etiqueta que esta dentro del parentesis */
+/* OJO: x ya no puede tener otro :not en otra declaración */
+.form-1 input:not([type="submit"]) {
+    margin-bottom: .5rem;
+    padding: .5rem;
+    border: thin solid green;
+    background-color: aquamarine;
+    color: blue;
+}
+
+
+
+section div {
+    background-color: violet;
+    border: 2px solid black;
+    width: 200px;
+    height: 50px;
+}
+
+/* xx:empty especifica que las etiquetas u otros xx estan vacios, no se le aplique los estilos incluidos  */
+section div:empty {
+    background-color: red;
+}
