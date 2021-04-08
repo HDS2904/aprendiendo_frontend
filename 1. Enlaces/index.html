@@ -8,29 +8,39 @@
 </head>
 <body>
     
-    
+    <h1>Enlances</h1>
 
     <p>
 
          <!--                       ENLACES                          -->
-         <a href="./imagenes/pika.jpg">ruta absoluta</a>
-
-
-        <!-- rutas absolutas (tienen protocolo http o https) -->
-        <a href="https://www.linkedin.com/in/canaleschavezjonathan-hds/">ruta absoluta</a>
-
-        <!-- rutas relativas (rutas internas del proyecto)-->
-        <a href="./destino.html">mismacarpeta</a>
-        <a href="./subcarpeta/subcarpeta.html">subcarpeta</a>
-
-        <!-- rutas de raiz (simplifica la ruta de la carpeta base) -->
-        <a href="">raiz/base</a>
-
+         <!-- target="blank" -> permite abrir el enlase en una nueva pestaña
+             rel="nofollow" -> no transmite SEO al referenciarte en otras paginas
+             rel="noreference" -> no indica el destino de origin del link referenciado
+             rel="noopener" -> bloquea codigo malicioso al abrir enlaces en nueva pestaña  -->
+         <a href="./imagenes/pika.jpg" target="_blank" rel="noopener">Ver imagen</a> <br>
+         <!-- dowload: permite la descarga del archivo al estar en un servidor -->
+         <a href="./imagenes/pika.jpg" download>Descargar imagen</a>
     </p>
 
     <p>
+        <!-- rutas absolutas (tienen protocolo http o https y son unicas) -->
+        <a href="https://www.linkedin.com/in/canaleschavezjonathan-hds/">ruta absoluta</a>
+    </p>
+
+    <p>
+        <!-- rutas relativas (rutas internas del proyecto)-->
+        <a href="./destino.html">misma carpeta</a> <br>
+        <a href="./subcarpeta/subcarpeta.html">subcarpeta</a>
+    </p>
+
+    <p>
+        <!-- rutas de raiz (simplifica la ruta desde la carpeta base del proyecto) -->
+        <a href="/1. Enlaces/marcadores.html">pagina marcadores</a>
+    </p>
+
+
+    <p>
         <!-- Enalaces Hash: href permite enlasar archivos externos -->
-        <!-- en target permite abrir el enlase en una nueva pestaña -->
         <a href="./marcadores.html#capitulo2" target="blank">Ir al capitulo 2 de la pagina marcadores</a>
     </p>
     
