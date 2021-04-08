@@ -1,0 +1,36 @@
+
+/* standar RECOMENDADO*/
+ *, *::before, *::after {
+     /* las capas se calculen del tamaño en si de la caja sin adicionarle mas tamaño */
+     box-sizing: border-box;
+ }
+
+/* caja dibujada */
+.box {
+    width: 200px;
+    height: 200px;
+    background: hsl(10, 90%, 50%);
+    margin: 100px auto;
+
+    /* Permite ponerle sombra a la caja*/
+    /*box-shadow: horizontal vertical difuminado expansion color | (sombra interior/exterior)*/
+    box-shadow: 200px 10px 10px 50px blue,
+                0 0 0 10px yellow,
+                0 0 0 20px green;
+}
+
+.box2 {
+    width: 200px;
+    height: 200px;
+    background: hsl(10, 90%, 50%);
+    border-radius: 50%;
+    margin: 100px auto;
+
+    /* se puede poner muchos bortes sobreponiendose */
+    box-shadow: 0 50px 0 yellow inset,
+                0 100px 0 green inset,
+                0 150px 0 blue inset;
+
+    /* la expansion puede ser negativa para ser menor al tamaño del objeto */
+    box-shadow: 20px 0 10px -5px black;
+}

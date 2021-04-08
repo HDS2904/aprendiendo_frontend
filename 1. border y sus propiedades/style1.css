@@ -1,0 +1,42 @@
+
+/* standar RECOMENDADO*/
+ *, *::before, *::after {
+     /* las capas se calculen del tamaño en si de la caja sin adicionarle mas tamaño */
+     box-sizing: border-box;
+ }
+
+.box {
+    width: 400px;
+    height: 300px;
+    background: red;
+    margin: 100px auto;
+
+    /* carateristicas: grosor estilo color */
+    border: 50px dotted black;
+
+    /* diviciones */
+
+    /* grosor/ si no se pone se pone por defecto */
+    border-top-width: 50px;
+    border-bottom-width: 40px;
+    border-right-width: 30px;
+    border-left-width: 20px;
+    
+    border-width: 50px 40px 30px 20px;
+
+    /* estilos para cada lado */
+    border-top-style: solid;
+    border-bottom-style: dotted;
+    border-right-style: dashed;
+    border-left-style: double;
+
+    border-style: solid dotted dashed double;
+
+    /* colores de los bordes */
+    border-top-color: blue;
+    border-bottom-color: green;
+    border-right-color: orange;
+    border-left-color: red;
+
+    border-color: yellow green violet red;
+}

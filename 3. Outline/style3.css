@@ -1,0 +1,19 @@
+
+/* standar RECOMENDADO*/
+ *, *::before, *::after {
+     /* las capas se calculen del tamaño en si de la caja sin adicionarle mas tamaño */
+     box-sizing: border-box;
+ }
+
+/* caja dibujada */
+.box {
+    width: 500px;
+    height: 350px;
+    background: hsl(10, 90%, 50%);
+    border: 10px solid black;
+    /* margin: 100px auto; */
+
+    /* Outline: Ayuda a reconocer todas las cajas poniendole border por fuera (grosor/estilo/color) */
+    outline: 5px solid yellow;
+    /* similar al borde */
+}

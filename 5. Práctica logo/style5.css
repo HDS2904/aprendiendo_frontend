@@ -1,0 +1,38 @@
+
+/* standar RECOMENDADO*/
+ *, *::before, *::after {
+     /* las capas se calculen del tamaño en si de la caja sin adicionarle mas tamaño */
+     box-sizing: border-box;
+ }
+
+:root {
+    --partex: 70px;
+    --partey: 100px;
+}
+
+.box {
+    /* necesario para manipular margenes verticales */
+    padding-top: 0.1px;
+    /* --------------------------------- */
+    width: 500px;
+    height: 350px;
+    background: hsl(10, 90%, 50%);
+    margin: 100px auto;
+    /* diviciones */
+    /* border-top-left-radius: 50px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 300px; */
+
+    border-radius: var(--partex)/var(--partey);
+
+}
+
+.play {
+    width: 200px;
+    height: 200px;
+    border: 100px solid;
+    margin-left: 200px;
+    margin-top: 75px;
+    border-color: transparent transparent transparent white;
+}

@@ -1,0 +1,52 @@
+
+/* standar RECOMENDADO*/
+ *, *::before, *::after {
+     /* las capas se calculen del tamaño en si de la caja sin adicionarle mas tamaño */
+     box-sizing: border-box;
+ }
+
+.box-1 {
+    width: 300px;
+    height: 300px;
+    background: seagreen;
+    margin: 100px auto;
+
+
+    /* diviciones */
+    border-top-left-radius: 50px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 300px;
+
+    border-radius: 50px 100px 200px 300px;
+
+    /* el circulo puede tener radio variable para horizontal/vertical (elipse) */
+    border-top-right-radius: 100px 50px; /*elipse*/
+
+    /* poner bordes circulares en una linea */
+    border-radius: 50px 100px 200px 30px / 50px 100px 200px 30px
+
+    /* si se pone % este esta en relacion a los lados del cuadrado cada radio */
+
+}
+
+.box-2 {
+    width: 100px;
+    height: 100px;
+    background: sienna;
+    margin: 100px auto;
+
+
+    /* diviciones */
+    border-top-left-radius: 50%;
+    border-top-right-radius: 10%;
+    border-bottom-left-radius: 70%;
+    border-bottom-right-radius: 0;
+
+    /* shorthand */
+    border-radius: 50% 10% 20% 0;
+
+    /* poner bordes circulares en una linea */
+    border-radius: 50% 10% 20% 0 / 20% 0 10% 50%
+
+}
