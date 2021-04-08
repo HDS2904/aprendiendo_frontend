@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tipos de selección</title>
+</head>
+<body>
+
+
+    <h1>Formulario (tipos de selección)</h1>
+
+    <!-- mas eficiente -->
+    <form>
+        <fieldset>
+            <legend>Datos adicionales</legend>
+            <div>
+                pasa tiempos:
+                <!-- input de tipo checkbox que permite seleccionar una o mas opciones (checked selecciona por defecto)-->
+                <label><input type="checkbox" checked>musica</label>
+                <label><input type="checkbox">cine</label>
+                <label><input type="checkbox">anime</label>
+            </div>
+            <div>
+                genero: 
+                <!-- input de tipo radio que permite seleccionar una opcione (deben tener el mismo name) -->
+                <label><input type="radio" name="gener" >Hombre</label>
+                <label><input type="radio" name="gener">Mujer</label>
+            </div>
+            <div>
+                escoje tu pais <br>
+                <!-- contiene una lista: name(categoria)/id(para js)/multiple(cuadro para navegar) -->
+                <select name="country" id="country" >
+                    <!-- Permit agrupar o categorizar elementos de la lista -->
+                    <optgroup label="America">
+                        <!-- elemento u opcion de una lista (selected: selecciona por defecto el input) -->
+                        <option value="pe">Perú</option>
+                        <option value="ch">Chile</option>
+                        <option value="br" selected>Brasil</option>
+                    </optgroup>
+                    <optgroup label="Asia">
+                        <option value="ja">Japon</option>
+                        <option value="ru">Rusia</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <!-- input de tipo select con filtro que busca la opción segun se escriba en el input (atributo list de "input" debe ser igual que el id de "datalist") -->
+                <label > País
+                    <input type="list" list="country-list">
+                    <datalist id="country-list">
+                        <option value="Perú"></option>
+                        <option value="Chile"></option>
+                        <option value="Paraguay"></option>
+                        <option value="Colombia"></option>
+                        <option value="Ecuador"></option>
+                    </datalist>
+                </label>
+            </div>
+        </fieldset>
+        
+        <!-- reemplazo del boton enviar: type(subir ddato) value(imprimir en el boton) -->
+        <input type="submit" value="Iniciar Sesion">
+    </form>
+    
+
+</body>
+</html>

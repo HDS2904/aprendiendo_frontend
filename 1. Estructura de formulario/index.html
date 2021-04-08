@@ -2,130 +2,70 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Formulario</title>
+    <title>Estructura de formulario</title>
 </head>
 <body>
 
-
-    <h1>Formulario (tipos de input)</h1>
+    <h1>Formulario tipo 1 (simple)</h1>
 
     <!-- etiqueta para estructurar formularios y action para validarlo porun back-end "php""" -->
     <form action="#">
-        <!-- campo donde el usuario escribe datos typo(tipo:text,entero,etc)-->
-        <input type="text">
-        <!-- boton de envio de dato -->
-        <button>Enviar</button>
-    </form>
 
-    <!-- otra manera -->
-    <form>
-        <!-- label da titulo a un campo y con for(conecta el label con el input) -->
-        <label for="nombre">Ingrese su nombre</label>
-        <input id="nombre" type="text">
-        <button>Enviar</button>
-    </form>
+        <!-- campo donde el usuario escribe datos:
+            type: (tipo:text,entero,etc)
+            placeholder: texto momentaneo de guía
+            name: tipo de campo que el servidor identifica el input del formulario (importante) -->
+        <input id="userName" name="userName" type="text" placeholder="Nombre">
 
-    <br>
-    <br>
+        <div>
+            <!-- input donde se puede agregar mucho texto -->
+            <textarea name="description" id="" cols="30" rows="4" placeholder="Escriba aquí una descripción"></textarea>
+        </div>
 
-    <!-- mas eficiente -->
-    <form>
-        <!-- permite agrupar campos -->
-        <fieldset>
-            <!-- legenda del fildset que actua como titulo del agrupamiento -->
-            <legend>datos personales</legend>
-            <!-- div para salto de linea formal -->
-            <div>
-                <!-- se puede omitir el label anterior y simplificarlo -->
-                <!-- name(back-end) y placeholder(imprime texto transparente dentro del input) -->
-                <input  name="username" placeholder="Ingrese nombre">
-            </div>
-            <div>
-                <!-- label contiene el password (mas comoda) -->
-                <label>
-                    ingrese su correo
-                    <!-- input tipo email / value(dato)-->
-                    <input type="email" value="ejemplo@unmsm.edu.pe">
-                </label>
-            </div>
-            <div>
-                <label>
-                    fecha de nacimiento
-                    <input type="date">
-                </label>
-            </div>
-            <div>
-                <label>
-                    edad
-                    <!-- input: value(ingresa datos)/ reonly(inmodificable) -->
-                    <input type="number" value="0" readonly>
-                </label>
-            </div>
-        </fieldset>
-        <fieldset>
-            <legend>Datos adicionales</legend>
-            <div>
-                pasa tiempos:
-                <label><input type="checkbox">musica</label>
-                <label><input type="checkbox">cine</label>
-                <label><input type="checkbox">anime</label>
-            </div>
-            <div>
-                genero: 
-                <label><input type="radio" name="gener">Hombre</label>
-                <label><input type="radio" name="gener">Mujer</label>
-            </div>
-            <div>
-                escoje tu pais
-                <!-- contiene una lista: name(categoria)/id(para js)/multiple(cuadro para navegar) -->
-                <select name="country" id="country" multiple >
-                    <!-- Permit agrupar o categorizar elementos de la lista -->
-                    <optgroup label="America">
-                        <!-- elemento u opcion de una lista -->
-                        <option value="pe">Perú</option>
-                        <option value="ch">Chile</option>
-                        <option value="br">Brasil</option>
-                    </optgroup>
-                    <optgroup label="Asia">
-                        <option value="ja">Japon</option>
-                        <option value="ru">Rusia</option>
-                    </optgroup>
-                    <!-- campo o area para ingresr o mostrar mensajes -->
-                    <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
-                </select>
-            </div>
-        </fieldset>
-        <fieldset>
-            <legend>datos de cuenta</legend>
-            <div>
-                <label>
-                    Ingrese su nombre
-                    <!-- atributo: id(manejo en javascrip)/ name (imput para mandar al back-end"php")/ requerid(indispensable sino no va) -->
-                    <input id="username" name="username" required>
-                </label>
-            </div>
-            <div>
-                <label>
-                    Ingrese su contraseña
-                    <!-- atributo name del imput para mandar al back-end(php) -->
-                    <input type="password" name="password" required>
-                </label>
-            </div>
-        </fieldset>
-        <!-- reemplazo del boton enviar: type(subir ddato) value(imprimir en el boton) -->
-        <input type="submit" value="Iniciar Sesion">
+        <!-- boton de envio de datos -->
+        <button>Enviar(button)</button>
+
     </form>
 
 
-    <!-- pequeño codigo javascrip para manejo de la etiqueta input(con id username) -->
-    <script>
-        // ejecutar un evento en la etiqueta "username"
-        // enviando datos cada que el usuario suelte el teclado
-        document.getElementById('username').addEventListener('keyup', e =>{
-            console.log(e.target.value)
-        })
-    </script>
+    <h1>Formulario tipo 2 (complejo)</h1>
+
+    <!-- etiqueta para estructurar formularios y action para validarlo porun back-end "php""" -->
+    <form action="#">
+
+        <!-- permite agrupar los input -->
+        <fieldset>
+
+            <!-- permite asignar el titulo al grupo -->
+            <legend>Datos personales</legend>
+
+            <div>
+                <!-- label: etiqueta que se vincula con el input por el "for" e "id" -->
+                <label for="userName">Nombre: </label>
+                <input id="userName" name="userName" type="text" placeholder="Escriba">
+            </div>
     
+            <div>
+                <!-- Label: etiqueta que contiene el input como hijo y simplifica el uso de for e id -->
+                <label>Apellido: 
+                    <input name="userLast" type="text" placeholder="Escriba">
+                </label>
+            </div>
+
+        </fieldset>
+
+        <div>
+            <label >Descripción: <br>
+                <textarea name="description" id="" cols="30" rows="4" placeholder="Escriba aquí una descripción"></textarea>
+            </label>
+        </div>
+
+        <!-- boton de envio de datos opcionales -->
+        <button>Enviar(button)</button>
+        <input type="submit" value="Enviar(input)">
+
+    </form>
+
 
 </body>
 </html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tipos de input</title>
+</head>
+<body>
+
+    <h1>Formulario (tipos de input)</h1>
+
+    <!-- mas eficiente -->
+    <form>
+        <!-- permite agrupar campos -->
+        <fieldset>
+            <!-- legenda del fildset que actua como titulo del agrupamiento -->
+            <legend>datos personales</legend>
+            <!-- div para salto de linea formal -->
+            <div>
+                <!-- se puede omitir el label anterior y simplificarlo -->
+                <!-- name(back-end) y placeholder(imprime texto transparente dentro del input) -->
+                <input  name="username" placeholder="Ingrese nombre">
+            </div>
+            <div>
+                <!-- label contiene el password (mas comoda) -->
+                <label>
+                    ingrese su correo
+                    <!-- input tipo email / value(dato)-->
+                    <input type="email" placeholder="ejemplo@unmsm.edu.pe">
+                </label>
+            </div>
+            <div>
+                <label>
+                    fecha de nacimiento
+                    <!-- input de tipo fecha -->
+                    <input type="date">
+                </label>
+            </div>
+            <div>
+                <label>
+                    edad
+                    <!-- input de tipo numerico: value(ingresa datos)/ reonly(inmodificable) -->
+                    <input type="number" value="0" readonly>
+                </label>
+            </div>
+            <div>
+                <label>
+                    telefono
+                    <!-- input de tipo telefono: value(ingresa datos) -->
+                    <input type="tel" placeholder="0">
+                </label>
+            </div>
+            <div>
+                <label>
+                    color
+                    <!-- input de tipo color (step: razon en la que varia)-->
+                    <input type="color" value="0" step="2" >
+                </label>
+            </div>
+            <div>
+                <label>
+                    grado
+                    <!-- input de tipo rango-->
+                    <input type="range" >
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>datos de cuenta</legend>
+            <div>
+                <label>
+                    Ingrese su nombre
+                    <!-- atributo: id(manejo en javascrip)/ name (imput para mandar al back-end"php")/ requerid(indispensable sino no va) -->
+                    <input id="username" name="username" required>
+                </label>
+            </div>
+            <div>
+                <label>
+                    Ingrese su contraseña
+                    <!-- atributo name del imput para mandar al back-end(php) -->
+                    <input type="password" name="password" required>
+                </label>
+            </div>
+        </fieldset>
+        <!-- reemplazo del boton enviar: type(subir ddato) value(imprimir en el boton) -->
+        <input type="submit" value="Iniciar Sesion">
+    </form>
+
+</body>
+</html>
