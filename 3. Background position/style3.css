@@ -1,0 +1,14 @@
+
+body {
+    height: 100vh; /* tamaño fijo definido */
+    background-color: grey;
+    background-image: url(https://3.bp.blogspot.com/-6b3dCM5IP0c/VqIwlz9BDII/AAAAAAAAkts/MvqzIGWiD_E/s1600/blue-android-logo.jpg);
+    background-repeat: no-repeat;
+    background-size: 300px;
+
+    /* background-posicion: permite posicionar el fondo */
+    /* background-posicion:  x /  y
+        x    (left/center/right al lado se puede poner px o %)
+        y    (top/center/bootom al lado se puede poner px o %) */
+    background-position: right 30px bottom 10%;
+}

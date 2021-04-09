@@ -1,0 +1,19 @@
+
+body {
+    height: 100vh; /* tamaño fijo definido */
+    background-color: green;
+
+    /* para fondos multiples solo separar por comas y la imagen se pone una sobre otra
+    consejo: la mas pequeña primera en declarar */
+    background-image: 
+    url(https://img00.deviantart.net/c993/i/2016/004/d/6/sasha_athena_tlc_render2_by_bluerathy_s-d8pusw9.png),
+    url(http://img13.deviantart.net/14e9/i/2013/007/5/0/tenma_de_pegaso___2___render___the_lost_canvas_by_obedragon-d5qqm9i.png),
+    url(https://img00.deviantart.net/1812/i/2015/104/2/f/saint_seiya_the_lost_canvas__alone_by_crisis_cissou-d8hflzn.png),
+    url(https://1.bp.blogspot.com/-QDaj3jH1z0o/V04UhSKC-aI/AAAAAAAACgw/JCOPfUhbDeYAicuOL_OrTzjMJHIZZTkLACLcB/s1600/emurolamentos.png);
+    background-repeat: no-repeat;
+
+    background-size: 50%, 50%, 50%, 20%; /* poner en % hace que varia de acuerdo al tamaño del body, previamente dandole un tamaño fijo y no automatico */
+
+    background-position: right bottom, left bottom, top center, left top;
+
+}

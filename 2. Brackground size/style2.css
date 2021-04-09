@@ -1,0 +1,26 @@
+
+body {
+    background: white;
+}
+
+.box {
+    width: 300px;
+    height: 200px;
+    background-image: url(https://3.bp.blogspot.com/-6b3dCM5IP0c/VqIwlz9BDII/AAAAAAAAkts/MvqzIGWiD_E/s1600/blue-android-logo.jpg);
+    padding: 20px;
+    border: 2px solid black;
+    margin: 100px auto;
+    background-repeat: no-repeat;
+
+    /* background-size = se indica el tamaño de dibujado del fondo
+        x y = indica el ancho y el alto en px, % o ambos (definir solo el ancho es recomendable)
+        contrain = poner toda la imagen dentro de la caja sin modificar su dimension
+        cover = rellena la imagen en toda la caja sin modificar su tamaño
+        auto = da su tamaño original de la imagen y dibujar en la caja */
+
+    background-size: 100px 100%; /* contraint/cover/auto */
+
+    /* ojo se puede poner en px, % */
+
+
+}

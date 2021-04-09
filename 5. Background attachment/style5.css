@@ -1,0 +1,22 @@
+
+body {
+    padding-bottom:  100em;
+    background-image: url(https://www.xtrafondos.com/wallpapers/resized/diseno-de-paisaje-del-espacio-5771.jpg?s=large);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+
+    /* Fija el fondo haciendo que al bajar el scroll no se altere la imagen */
+    background-attachment: fixed;
+}
+
+p {
+    color: white;
+    font-size: 2em;
+}
+
+.par {
+    padding: 3em 2em;
+    color: white;
+    font-size: 30px;
+}

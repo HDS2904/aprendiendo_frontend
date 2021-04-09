@@ -1,0 +1,16 @@
+
+body {
+    height: 100vh; /* tamaño fijo definido */
+
+    /* podemos poner todos los fondos en una linea de background generalizando */
+    /* background: image position / size repeat attaachment origin clip  (para cada fondo)  */
+    background: 
+    url(https://img00.deviantart.net/c993/i/2016/004/d/6/sasha_athena_tlc_render2_by_bluerathy_s-d8pusw9.png) right bottom/50%,
+    url(http://img13.deviantart.net/14e9/i/2013/007/5/0/tenma_de_pegaso___2___render___the_lost_canvas_by_obedragon-d5qqm9i.png) left bottom/50%,
+    url(https://img00.deviantart.net/1812/i/2015/104/2/f/saint_seiya_the_lost_canvas__alone_by_crisis_cissou-d8hflzn.png) top center/50%,
+    url(https://1.bp.blogspot.com/-QDaj3jH1z0o/V04UhSKC-aI/AAAAAAAACgw/JCOPfUhbDeYAicuOL_OrTzjMJHIZZTkLACLcB/s1600/emurolamentos.png) left top/20%,
+    yellow;
+
+    /* factorizacion del repeat (al repetirse en todas las imagenes) */
+    background-repeat: no-repeat;
+}

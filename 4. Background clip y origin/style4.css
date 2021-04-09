@@ -1,0 +1,18 @@
+
+.box {
+    width: 500px;
+    height: 400px;
+    padding: 20px;
+    border: 20px dashed black;
+    margin: 100px auto;
+
+    background-image: url(https://www.florespedia.com/Imagenes/paisaje-de-girasoles.jpg);
+    background-size: cover;
+
+    /* background-clip: desde que capa hacia abajo se visualiza la imagen (border-box/padding-box/content-box) */
+    background-clip: content-box;
+
+    /* background-origin: desde que capa de la caja comienza el dibujado de fondo (border-box/padding-box/content-box), ya que en background-clip se  inicia desde el borde que es tapado por las capas*/
+    background-origin: border-box;
+
+}

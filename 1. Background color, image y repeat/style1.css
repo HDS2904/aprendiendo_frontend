@@ -1,0 +1,12 @@
+
+/* Se puede poner colores al fondo (color siempre se pone debajo por efecto) */
+
+body {
+    background-color: gray;
+
+    /* Imagen como fondo importada de la web */
+    background-image: url(UNMSM02.png);
+    
+    /* se puede poner: repeat(repetida [esta por defecto]), no-repeat(sin repetir), repeat-x(se repite horizontalmente) y repeat-y(repite verticalmente)*/
+    background-repeat: no-repeat;
+}
