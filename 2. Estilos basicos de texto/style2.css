@@ -1,0 +1,34 @@
+
+
+
+/* diEstilos básicos */
+.p1 {
+    /* Tamaño del texto */
+    font-size: 2rem;
+    /* Tipografía */
+    font-style: italic;
+    /* Grosor al texto */
+    font-weight: 600;
+    /* Alineación del texto */
+    text-align: center;
+    /* Altura de separación entre lineas */
+    line-height: 3rem;
+}
+
+.p2 {
+    /* Agrega subrayado en cualquier altura */
+    text-decoration: underline;
+}
+
+.p3 {
+    /* transforma letras en mayusculas y minusculas */
+    text-transform: uppercase;
+    /* Separación entre letras */
+    letter-spacing: .5rem;
+}
+
+.p4 {
+    /* Separación entre palabras */
+    word-spacing: 1em;
+}
+

@@ -1,0 +1,30 @@
+
+/* em: 100% del tamaño de fuente del contexto del padre(variable) */
+/* rem: tamaño de fuente de root o raiz (estatito 16px) */
+
+/* VARIABLES */
+:root {
+    font-size: 1em;
+}
+
+h1 {
+    font-size: 3em; /* 4*(1em) relatibo a la raiz o html */
+}
+
+span {
+    font-size: 2em; /* 2*(3*(1em)) relativo a h1 */
+    color: red;
+}
+
+
+/* FIJOS */
+h2 {
+    font-size: 3rem; /* 3*(1em) relativo a la raiz */
+}
+
+strong {
+    color: green;
+    font-size: .5rem; /* 0.5*(1em) relativo a la raiz */
+}
+
+/* Recomendación:  rem (tamaño de fuente) y em (margenes, pagind, etc) */

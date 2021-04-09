@@ -1,0 +1,26 @@
+body {
+    font-size: 2em;
+}
+
+
+/* font-family: da un estilo de fuente */
+
+h4 {
+    /* uso de estilos importados de google */
+    font-family: 'Orbitron',' Open-Sans';
+    /* Especificación del tamaño segun lo importado */
+    font-weight: 600;
+}
+
+p {
+    /* Se puede poner alternativas de fuentes si uno no carga
+        font-family:fuente1, fuente2, fuente3; */
+    font-family: 'Times New Roman', Times, serif;
+    /* ojo si el nombre de fuente tiene espacios, se pone entre ' ' */
+}
+
+div {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+

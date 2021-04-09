@@ -1,0 +1,28 @@
+
+body {
+    font-size: 2em;
+    background: #333;
+}
+
+/* text-shadow: crea una copia del texto 
+h-offset(ubicacion horizontal)
+v-offset(ubicacion vertical)
+blur(difuminado)
+color(colores)
+similar al box-shadow*/
+
+h2 {
+    text-align: center;
+    color: aqua;
+
+    /* text-shadow: x y blur color / ... / ....  */
+    text-shadow: 1em 1em 0 green,
+                 2em 2em 0 red;
+}
+
+h3 {
+    color: white;
+
+    /* lo recomendable es con etiquetas <svg> </svg> */
+    text-shadow: 1px 1px 0 yellow;
+}
