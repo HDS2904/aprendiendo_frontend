@@ -1,0 +1,107 @@
+
+body {
+    font-size: 4rem;
+}
+
+/* FLEX GRON */
+.container1 {
+    background-color: cornflowerblue;
+    display: flex;
+    flex-flow: row wrap;
+
+}
+.item1 {
+    border: 1px solid black;
+
+    /* asigna un % del espacio sobrante, proporcional al "glex-grow" del item (adicional al tamaño asignado) 
+        este tamaño es flexible al tamaño de la ventana */
+
+    flex-grow: 1; /* rango de 0 - 1 */
+}
+
+.item1:nth-child(2) {
+    flex-grow: 4;
+}
+
+/* FLEX SHIRNK */
+.container2 {
+    background-color: mediumslateblue;
+    display: flex;
+
+}
+
+.item2 {
+    border: 1px solid black;
+    width: 500px;
+    /* reduce un % del espacio desbordante, proporcional al "glex-shrink" al item (aplicabel al tamaño real) */
+    flex-shrink: 1;
+}
+
+.item2:nth-child(3) {
+    flex-shrink: 4;
+}
+
+/* FLEX BASIS */
+.container3 {
+    background-color: green;
+    display: flex;
+
+}
+
+.item3 {
+    border: 1px solid black;
+    /* tamaño base/inicial del item segun la alineación de los item (row) o (column) */
+    flex-basis: 0; /* OJOOOOOOOOOO: asl asignar 0 puedes usarlo con flex-grow para que todos los item tengan el mismo tamaño */
+}
+
+
+/* FLEX */
+.container4 {
+    background-color: tomato;
+    display: flex;
+
+}
+
+.item4 {
+    border: 1px solid black;
+    /* flex: flex-grow flex-shrink flex-basis */
+    flex: 1 1 0;
+}
+
+
+/* PROPIEDAD ALING-SELF */
+.container5 {
+    background-color: teal;
+    display: flex;
+    height: 300px;
+    align-content: center;
+    align-items: center;
+}
+
+.item5 {
+    border: 1px solid black;
+}
+
+.item5:nth-child(3) {
+    align-self: flex-start;
+}
+
+/* ORDER */
+.container6 {
+    background-color: royalblue;
+    display: flex;
+    height: 300px;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+.item6 {
+    border: 1px solid black;
+    margin: 20px;
+}
+
+.item6:nth-child(5) {
+    /* altera el orden del item (0: valor por defecto, >0: al final de los demas item, <0: al inicio de los demas item */
+    order: -2;
+}

@@ -1,0 +1,39 @@
+
+body {
+    font-size: 4rem;
+}
+
+.container {
+    background-color: cornflowerblue;
+
+    /* convierte a la etiqueta en un contenedor flex y a sus hijos en item flex (control de sentido) */ 
+    display: flex;
+
+    /* Altera el eje main-axis (eje horizontal principal) */
+    flex-direction: row-reverse;
+
+    /* Altera el eje cross-axis (liena vertical) - (ante un desborde de contenido permite el salto de linea) */
+    flex-wrap: wrap;
+
+    /* shorthand para flex.direction y flex-warp */
+    /* flex-flow: row-reverse wrap; */
+
+}
+
+.container2 {
+    background-color: darkorange;
+    height: 400px;
+    display: flex;
+
+    /* alinea los items */
+    justify-content: space-around; /* alineación en el eje principal */
+    align-items: flex-end;    /* alineación en el eje secundario */
+    
+    /* alinea las lineas dentro del contenido */
+    align-content: baseline; 
+}
+
+.item {
+    border: 1px solid black;
+    margin: 2rem ;
+}

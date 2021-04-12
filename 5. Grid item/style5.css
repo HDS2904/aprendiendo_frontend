@@ -1,0 +1,45 @@
+/* FR */
+.container1 {
+    background-color: limegreen;
+    display: grid;
+    /* las columnas de tipo fr son flexibles por defecto de tamaño minimo no menor al contenido */
+    grid-template-columns: repeat(12,1fr);
+    grid-gap: 1rem;
+}
+
+.item1 {
+    border: 2px solid black;
+    background-color: cornflowerblue;
+}
+
+/* MIN-CONTENT, MAX-CONTENT Y FIT-CONTENT() */
+.container2 {
+    background-color: darkcyan;
+    display: grid;
+    /* min-content: asigna el minimo tañaño del contenido a la columna
+        max-content: asigna el maximo tamaño del contenido a la columna
+        fit-content(): funcion que asigna tamaño flexible y un maximo de acuerdo al parametro */
+    grid-template-columns: min-content max-content fit-content(300px);
+    grid-gap: 1rem;
+}
+
+.item2 {
+    border: 2px solid black;
+    background-color: lightcyan;
+}
+
+/* MINMAX(), AUTO-FIT, AUTO-FILL */
+.container3 {
+    background-color: olivedrab;
+    display: grid;
+    /* min-max(m,n): asigna el minimo tamaño de m y maximo de n al item
+       auto-fit: permite cargar tantas columas que entren al tamaño de la ventana (el maximo es de acuedo al numero de items)
+        auto-fill: permite cargar tantas columnas que entren al tamaño de la ventana (las crea sin limite de tacks) */
+    grid-template-columns: repeat(auto-fill,minmax(100px,1fr) );
+    grid-gap: 1rem;
+}
+
+.item3 {
+    border: 2px solid black;
+    background-color: peru;
+}
