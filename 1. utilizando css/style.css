@@ -1,0 +1,36 @@
+
+body {
+    background-color: gray;
+}
+
+/* TAMAÑO DE LA PANTALLA */
+/* min-width y max-width: indica el tamaño minimo y maximo de la pantalla respectivamente */
+@media screen and (min-width:600px) and (max-width:1200px) {
+    body {
+        background-color: green;
+    }
+}
+
+/* ORIENTACIÓN DE LA PANTALLA */
+/* orientation: landscape indica si el ancho tiene mayor resolución que el alto */
+@media screen and (orientation: landscape) {
+    body {
+        background-color: lightsalmon;
+    }
+}
+
+
+/* orientation: landscape indica si el alto tiene mayor resolución que el alto */
+@media screen and (orientation: portrait) {
+    body {
+        background-color: slateblue;
+    }
+}
+
+/* PROPORCIÓN DE LA PANTALLA */
+/* min-aspect-ratio, max aspect-ratio y device-aspect-ratio indica la proporción minima maxima */
+@media screen and (min-aspect-ratio: 4/3) {
+    body {
+        background-color: slateblue;
+    }
+}

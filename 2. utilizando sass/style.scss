@@ -1,0 +1,25 @@
+$pequeno: 600px;
+$medio: 1200px;
+$grande: 1600px;
+
+@mixin rwd ($size) {
+    @media screen and ( min-width: $size) {
+        @content;
+    }
+}
+
+body {
+    background-color: gray;
+
+    @include rwd($pequeno) {
+        background-color: green;
+    }
+
+    @include rwd($medio) {
+        background-color: violet;
+    }
+
+    @include rwd($grande) {
+        background-color: orange;
+    }
+}
