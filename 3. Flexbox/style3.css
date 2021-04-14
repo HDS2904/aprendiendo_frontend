@@ -1,0 +1,16 @@
+
+/* Uso de felxbox para  */
+.container {
+    /* activando propiedades flex */
+    display: flex;
+    /* permitir el salto de linea  */
+    flex-wrap: wrap;
+}
+
+.item {
+    background-color: olivedrab;
+    padding: 10px;
+    margin: 10px;
+    /* shorthand => flex: flex-grow flex-shrink flex-basis */
+    flex: 1 1 200px;
+}

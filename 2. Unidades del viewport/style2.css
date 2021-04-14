@@ -1,0 +1,42 @@
+
+/* Unidades del Viewport: 
+    vw: ancho del viewport,
+    vh: alto del viewport,
+    vmin: lado menor del viewport (alto o ancho),
+    vmax: lado mayor del viewport (alto o ancho) */
+
+
+body {
+    height: 120vh;
+}
+
+.etiqueta1 {
+    background-color: indianred;
+    width: 50%;
+}
+
+.container {
+    margin: 20px 0;
+    border: 2px solid black;
+    width: 80%;
+}
+
+.etiqueta2 {
+    background-color: burlywood;
+    width: 50%;   /* usar % es referente al ancentro con tamaño definido */
+    /* OJO: es recomendable usar width: 50vw para un ancho exacto del 50% de la pantalla */
+}
+
+
+/* Método para tener 100vw de una caja sin que aparesca el scrollbar */
+:root {
+    --scroll-bar: 13px;
+}
+
+
+.etiqueta3 {
+    background-color: olive;
+    width: calc(100vw - var(--scroll-bar));
+}
+
+/* NOTA: UNO DEBE SABER CUANDO USAR %, em, rem, vh, vh, vmin y vmax PARA UNA WEB RESPONSIVE ADEMAS DE MEDIA QUERYS */

@@ -1,0 +1,36 @@
+
+// BREAKPOINTS
+
+    // Major breakpoints
+    $breakpoints: (
+        small: 0px,
+        medium: 640px,
+        large: 1024px,
+        xlarge: 1200px,
+        xxlarge: 1440px,
+    );
+
+@mixin rwd ( $tamano ) {
+    @if map-has-key($breakpoints, $tamano ) {
+        @media screen and (min-width: map-get($map: $breakpoints, $key: $tamano) ) {
+            @content;
+        }
+    } @else {
+        @media screen and (min-width: $tamano) {
+            @content;
+        }
+    }
+}
+
+body {
+    background-color: gray;
+    @include rwd( 720px ) {
+        background-color: slateblue;
+    }
+
+    @include rwd( 1200px ) {
+        background-color: olive;
+    }
+}
+
+// Minor Breakpoints: son tamaños especificos que se usan para problemas especificos de bugs (no estan definidas dentro del major breakpoints)

@@ -1,0 +1,8 @@
+body {
+  background-color: gray; }
+  @media screen and (min-width: 720px) {
+    body {
+      background-color: slateblue; } }
+  @media screen and (min-width: 1200px) {
+    body {
+      background-color: olive; } }

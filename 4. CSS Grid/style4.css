@@ -1,0 +1,22 @@
+
+/* Uso de CSS Grid para  */
+* {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    /* shorthand espacio entre items en css grid */
+    gap: 1em;
+    /* define columnas, donde:
+        repeat(,): permite abrebiar la generación del numero de columnas
+        autofill: permite agregar tantos item se pueda en una fila segun el tamaño del viewport
+        minmax(,): permite definir el minimo tamaño y maximo de cada item
+        fr: define el tamaño flexible para cada item */
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+}
+
+.item {
+    background-color: olivedrab;
+    padding: 10px;
+}
