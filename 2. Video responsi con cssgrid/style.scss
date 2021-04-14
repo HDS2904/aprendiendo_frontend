@@ -1,0 +1,21 @@
+
+@mixin tamanoVideo( $w, $h ) {
+    display: grid;
+    grid-template-columns: repeat($w,1fr);
+    grid-template-rows: repeat($h,1fr);
+    position: relative;
+    &::before {
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+    }
+}
+
+.video {
+    @include tamanoVideo(16, 9);
+    > iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+}

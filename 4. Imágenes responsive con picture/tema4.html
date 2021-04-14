@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágenes responsive con picture</title>
+</head>
+<body>
+
+    <h1>Imágenes responsive con picture</h1>
+
+    <picture>
+        <!-- Media query en html -->
+        <source srcset="https://c.wallhere.com/photos/44/47/1600x900_px_mountain_night_sky_stars_Trees-517931.jpg!d" media="(min-width: 1600px)">
+        <source srcset="https://www.freejpg.com.ar/asset/900/ac/ac2a/F100005465.jpg" media="(min-width: 900px) and (max-width: 1599px)">
+        
+        <!-- imagen por defecto -->
+
+        <!-- NOTA: al usar imagenes que nosoportan otros navegadores, es mejor usar la etiqueta: type="image/webp" para saltar de ese source -->
+        <img src="https://www.fonditos3d.com/800x600/imagen-de-playa-3d.jpg" alt="fondo pequeño">
+    </picture>
+
+    <footer>
+        <a href="../index.html">Regresar al menú principal</a>
+    </footer>
+
+</body>
+</html>

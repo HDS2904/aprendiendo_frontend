@@ -1,0 +1,25 @@
+.container {
+  margin: 10%; }
+
+.img {
+  width: 100%;
+  max-width: 100%;
+  height: auto; }
+
+.img {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  position: relative;
+  background-color: gray;
+  background: url("https://www.fonditos3d.com/800x600/imagen-de-playa-3d.jpg") center/cover; }
+  .img::before {
+    content: "";
+    display: block;
+    padding-bottom: 100%; }
+  @media screen and (min-width: 900px) {
+    .img {
+      background: url("https://www.freejpg.com.ar/asset/900/ac/ac2a/F100005465.jpg") center/cover; } }
+  @media screen and (min-width: 1600px) {
+    .img {
+      background: url("https://th.bing.com/th/id/R5fce9446a039cf01f9f9c181a7d38649?rik=TUsYRWNGsByXsQ&riu=http%3a%2f%2fwww.fonditos3d.com%2fImagenes%2fatardecer-3d.jpg&ehk=GeT29jF2W48PIiKFkadX278J2zcBPNCaHZQVCIDui3M%3d&risl=&pid=ImgRaw") center/cover; } }
