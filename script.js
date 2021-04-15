@@ -1,42 +1,34 @@
-// SCOPE
-    // Variables
-    let varGlobal = 'variable global'
+// MAP AND FILTER
+let array = [1,2,3,4,5,6,7,8,9]
 
-    function prueba() {
-        let varLocal = 'dentro de función prueba'
-        console.log(varLocal);
-        console.log(varGlobal);
+    // Map: retorna un array con los elememtos tratados segun el operador
+    let newArray = array.map( item => item * item )
+    console.log(newArray);
+
+    // Filter: retorna un arreglo con los elementos filtrados segun la condición
+    let newArray2 = array.filter( item => item > 5 )
+    console.log(newArray2);
+    
+    //Find: retorna el primer elemento que cumple la condición
+    let newArray3 = array.find( item => item%3 == 0)
+    console.log(newArray3);
+
+
+    // NOTA: estos métodos retornan un nuevo array y no alteran el existente
+    for( i = 0; i < array.length; i++) {
+        console.log(array[i]);
     }
-    prueba()
-    // console.log(varLocal);  //Error al no estar definida la variable globalmente
-    console.log(varGlobal);
 
+    let listObject = [
+        { id: 1, name: 'Jonathan' },
+        { id: 2, name: 'Carlos' },
+        { id: 3, name: 'Jilio' },
+        { id: 4, name: 'Steve' },
+    ]
+    for (const iterator of listObject) {
+        console.log(iterator);
+    }
 
-    //HOISTING
-        // Variables inicializadas y posteriormente decalradas
-        x = 'hola'
-        console.log(x);
-        var x
- 
-        y = 'mundo'
-        console.log(y);
-        // let y  //Error enminente
-
-        z = 'experto'
-        console.log(z);
-        // const z
-
-        // Modo de evitar errores
-        let a1 = 1
-        const a2 = 15
-        console.log(`m = ${a1} y n = ${a2}`);
-        
-
-        var m = 12
-        console.log(`m = ${m} y n = ${n}`);
-        var n = 6
-       
-        var f = 12
-        var g
-        console.log(`m = ${f} y n = ${g}`);
-        g = 15
+    listObject.forEach(element => {
+        console.log(element.name);
+    });
